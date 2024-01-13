@@ -62,8 +62,8 @@ console.log(customer.fullname.firstname)
 
 const obj1={1:"a",2:"b"}
 const obj2={3:"c",4:"d"}
-assign combines two or more target objects with the source object
-const obj_new=Object.assign(obj1,obj2)/*Here obj2 is combined in obj1 which is modified*/
+//assign combines two or more target objects with the source object
+//const obj_new=Object.assign(obj1,obj2)/*Here obj2 is combined in obj1 which is modified*/
 console.log(obj_new)
 console.log(obj1)
 
@@ -106,3 +106,4 @@ console.log(c)
     {},
     {}
  ]
+ */
