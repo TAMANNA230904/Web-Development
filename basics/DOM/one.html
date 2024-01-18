@@ -6,15 +6,38 @@
     <title>DOM Learning</title>
 </head>
 <body>
-    <div class="bg-black"><h1 class="heading">DOM Learning</h1>
+    <div class="bg-black">
+    <h1 class="heading" id="head">DOM Learning
+        <span style="display:none">text test</span>
+    </h1>
+    
     <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quaerat ullam velit, consectetur quos quod veniam accusamus autem obcaecati rem nulla magni culpa incidunt voluptatum earum! Itaque laudantium rem impedit?
     Quis autem rerum dolorem perspiciatis numquam. Fuga blanditiis hic harum </p></div>
 </body>
 </html> 
+<!-- output**
+document.getElementById("title")
+null
+document.getElementById("head")
+<h1 class=​"heading" id=​"head">​DOM Learning​</h1>​
+document.getElementById("head").id
+'head'
+document.getElementById("head").id.class
+undefined
+document.getElementById("head").id.className
+undefined
+document.getElementById("head").className
+'heading'
+document.getElementById("head").getAttribute("id")
+'head'
+document.getElementById("head").setAttribute("class","test")
+undefined -->
 
-/*To do changes in any live webpage for ex-wikipedia page's heading is changed like this:
+
+
+
+<!-- To do changes in any live webpage for ex-wikipedia page's heading is changed like this:
 document.getElementById('firstHeading')
 output------<h1 id=​"firstHeading" class=​"firstHeading mw-first-heading">​…​</h1>​
 document.getElementById('firstHeading').innerHTML="<h1>Tamanna Sheikh</h1>"
-output------'<h1>Tamanna Sheikh</h1>'
-*/
+output------'<h1>Tamanna Sheikh</h1>' -->
