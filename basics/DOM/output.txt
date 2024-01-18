@@ -1,0 +1,55 @@
+*********querySelector************
+ const myul=document.querySelector('ul')
+ undefined
+ myul.querySelector("li")
+ <li>​::marker​"one"</li>​
+ const turnGreen=myul.querySelector("li")
+ undefined
+ turnGreen.style.backgroundColor="green"
+ 'green'
+ turnGreen.innerText
+ 'one'
+ turnGreen.innerText="five"
+ 'five'
+
+
+ **********querySelectorAll**********
+document.querySelectorAll("li")
+NodeList(3) [li, li, li]
+const templi_list=document.querySelectorAll("li")
+undefined
+templi_list
+ 0: li1: li2: lilength: 3[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+templi_list[0].style.color="blue"
+'blue'
+document.querySelectorAll("h1")
+NodeList [h1#head.heading]0: h1#head.headinglength: 1[[Prototype]]: NodeList
+document.querySelectorAll("h1").style.color="Yellow"
+VM1310:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:44
+(anonymous) @ VM1310:1
+document.querySelectorAll("h1")[0].style.color="Yellow"
+'Yellow'
+const templist=document.querySelectorAll("h1")
+undefined
+templist
+NodeList [h1#head.heading]
+templist.forEach(function (){})
+undefined
+templist.forEach(function (l) {l.style.backgroundColor="red"})
+undefined
+
+
+*******HTMLCollection to Array**********
+document.getElementsByClassName("list-item")
+HTMLCollection(3) [li.list-item, li.list-item, li.list-item]
+const list=document.getElementsByClassName("list-item")
+undefined
+list
+HTMLCollection(3) [li.list-item, li.list-item, li.list-item]0: li.list-item1: li.list-item2: li.list-itemlength: 3[[Prototype]]: HTMLCollection
+const myconvertedlist=Array.from(list)
+undefined
+myconvertedlist
+(3) [li.list-item, li.list-item, li.list-item]
+myconvertedlist.forEach(function (li){li.style.color="brown"})
+undefined
