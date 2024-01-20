@@ -26,6 +26,9 @@ buttons.forEach(function (button) {
       case 'yellow':
         body.style.backgroundColor = e.target.id;
         break;
+      case 'purple':
+        body.style.backgroundColor = e.target.id;
+        break;  
       default:
         break;
     }
